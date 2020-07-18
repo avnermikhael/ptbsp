@@ -2,6 +2,23 @@
 
 public class Pattern4 {
     public static void main(String[] args) {
+        int matrix[][] = new int[5][5];
+        int c = 1;
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                matrix[i][j] = c;
+                c++;
+            }
+        }
+
+        for (int p = 0; p < 5; p++) {
+            for (int q = 0; q < 5; q++) {
+                System.out.print(matrix[p][q] + " ");
+            }
+            System.out.println();
+        }
+
         // int input = 4;
 
         // for (int i = 1; i <= input; i++) {
